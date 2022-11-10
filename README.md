@@ -1,5 +1,5 @@
 # UnityAStarPathfinding
-Shortest (using minimum nodes) path finding with A* algorithm for Unity.
+Shortest path finding with A* algorithm for Unity.
 
 
 ![Ekran Görüntüsü (21)](https://user-images.githubusercontent.com/66875687/201072838-aef14891-767b-4356-8a94-aebf20801ae9.png)
