@@ -9,15 +9,16 @@ Shortest path finding with A* algorithm for Unity.
 <h1> Usage (On example 3D human mesh) </h1>
 
 ```
-List<Node> nodes = new List<Node>();
-List<Edge> edges = new List<Edge>();
+List<Node> nodes = new List<Node>(); //create nodes list to store nodes on the scene
+List<Edge> edges = new List<Edge>();  //create edges list to store edges on the scene 
+// follows basic (NODE - EDGE - NODE) structure
 
  for (int i = 0; i < vertices.Length; i++) //add vertices to the nodes list
-        {
-            Vector3 point = transform.TransformPoint(vertices[i]);
-            var node = new Node(point, i);
-            this.nodes.Add(node);
-        }
+ {
+     Vector3 point = transform.TransformPoint(vertices[i]);
+     var node = new Node(point, i);
+     this.nodes.Add(node);
+ }
 
 //add connections between vertices to the edges list
 //...
@@ -25,7 +26,7 @@ List<Edge> edges = new List<Edge>();
 //...
 
 //Use PathFinder3000's method to find the path.
-PathFinder3000.Search(this.ALL_NODES[vertexIndex1], this.ALL_NODES[vertexIndex2])
+PathFinder3000.Search(this.ALL_NODES[vertexIndex1], this.ALL_NODES[vertexIndex2]);
 // (startingNode, destinationNode) as parameters.
 
 //Visualize the path using a line renderer:
